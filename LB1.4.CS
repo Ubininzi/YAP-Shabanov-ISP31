@@ -3,7 +3,6 @@ int hrs = 12; int mins = 30;
 if (n != 0){
     mins = 5 * (n + 1);
     hrs += (mins / 60) + n;
-    mins %= 60;
-    hrs %= 24;
+    mins %= 60; hrs %= 12;
 } 
 Console.WriteLine($"{hrs}:{mins}");
