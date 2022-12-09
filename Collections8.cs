@@ -6,8 +6,7 @@ static void Coder(string str){
         if (MAP.ContainsKey(c)){
             MAP[c].Add(i);
         }else{
-            MAP[c] = new SortedSet<int>();
-            MAP[c].Add(i);
+            MAP[c] = new SortedSet<int>{i};
         }
         i++;
     }
